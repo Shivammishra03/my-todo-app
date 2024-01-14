@@ -2,7 +2,7 @@
   <div class="main-todo-section">
     <h1 class="heading-sec">My Todo App</h1>
     <div class="add-todo-section">
-      <UForm :validate="validate" :state="state" class="add-todo-section" @submit="addNewTask">
+      <UForm class="add-todo-section" @submit="addNewTask">
         <UInput inputClass="w-auto" v-model="newTask" placeholder="Add a new task" @keypress.enter="addNewTask" />
           <div class="input-errors helvetica-regular" v-for="error of v$.newTask.$errors" :key="error.$uid">
             <div class="error-msg">{{ error.$message }}</div>
