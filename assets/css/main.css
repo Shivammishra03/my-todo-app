@@ -21,6 +21,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    position: relative;
+}
+.input-errors {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    color: #f90000b8;
 }
 .task-details-section {
     max-width: 830px;
